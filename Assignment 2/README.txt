@@ -1,8 +1,4 @@
-1. AUTHORS :
-Romain Boyer
-Flore de Lasteyrie
-
-2. FINAL SYSTEM :
+FINAL SYSTEM :
 
 The big steps of our final system are : 
 - Importing data
@@ -18,13 +14,15 @@ Some results :
 MultinomialNB  # With alpha=0.53  -> acc=78.72
 LinearSVC      # With C=0.138     -> acc=79.26
 
-In src you can find 3 classifier python files :
+In src you can find 4 classifier python files :
 - classifier_spacy which uses the SpaCy library and lemmatisation 
   but has a very long computation time
+- classifier_cnn in which we tried to implement a neural network
 - classifier_dev which was used during development to test different algorithms,
   visualise accuracy scores and confusion matrices (on the train and the test set)
 - classifier which is the “production” file; no print and only the chosen algorithm
   to be as clear as possible
 
-3. ACCURACY ON DEVDATA
+ACCURACY ON DEVDATA
+
 79.26
